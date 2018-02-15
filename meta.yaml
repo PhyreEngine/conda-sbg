@@ -18,11 +18,15 @@ build:
   script: |
     touch README
     autoreconf -i
+
     ./configure --prefix="$PREFIX"
     make
     make potentialsdir="$PREFIX/share/sbg/potentials" install
 
 requirements:
+  run:
+  - bzip2
+  - zlib
   build:
   - {{ compiler('cxx') }}
   - make
