@@ -20,7 +20,7 @@ source:
   git_rev: master
 
 build:
-  number: 0
+  number: {{ environ.get("BUILD_NUMBER", 0) }}
   script: |
     touch README
     autoreconf -i
