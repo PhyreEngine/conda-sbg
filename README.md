@@ -10,7 +10,7 @@ fragment libraries.
 
 ## Building
 
-You should be able to build this package by simply running `conda build .`.
+You should be able to build this package by simply running `./build`.
 Potentials will be installed to `$PREFIX/share/sbg/potentials/`.
 
 [conda]: https://conda.io
