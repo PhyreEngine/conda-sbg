@@ -16,7 +16,7 @@ package:
   version: {{ version }}
 
 source:
-  git_url: /bmm/phyreengine/software/git/bare/sbg.git
+  git_url: file:///bmm/phyreengine/software/git/bare/sbg.git
   git_rev: master
 
 build:
